@@ -24,6 +24,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -725,6 +729,7 @@
     <Content Include="Test\JScript2.js" />
     <Content Include="Test\SerachTest.htm" />
     <Content Include="Test\TestFileUpload.htm" />
+    <Content Include="View\Gitdemo.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\Index.aspx" />
     <Content Include="View\Error.aspx" />
@@ -832,6 +837,13 @@
     </Compile>
     <Compile Include="Test\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Gitdemo.aspx.cs">
+      <DependentUpon>Gitdemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Gitdemo.aspx.designer.cs">
+      <DependentUpon>Gitdemo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
