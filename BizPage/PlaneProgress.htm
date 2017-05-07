@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>飞机维修进度一览</title>
+    <link href="../Scripts/jquery-easyui-1.4.1/themes/default/easyui.css" rel="stylesheet"
+    type="text/css" />
+    <link href="../Scripts/jquery-easyui-1.4.1/themes/icon.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-easyui-1.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-easyui-1.4.1/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="../Scripts/Highcharts-4.0.1/highcharts.js" type="text/javascript"></script>
+    <script src="../Scripts/SystemJS/log.js" type="text/javascript"></script>
+    <script src="../Scripts/PlaneProgress.js" type="text/javascript"></script>
+
+    
+    <style type="text/css">
+    html { height:100%; border:0;}
+    body { height:100%; margin:0;}
+    </style>
+
+
+    <script  type="text/javascript" language="javascript">
+        $(function () {
+            initPage();
+        });
+        function initPage() {
+            setColumn();
+            SetDg();
+        }
+    </script>
+</head>
+<body>
+    <div class="easyui-layout" id="div9086" style="background-color: #FFFFFF; text-align: left;
+        width: 100%; height: 100%; min-height: 650px; min-width: 1000px;">
+        <div id="aa" data-options="region:'north',title:'任务统计报表'" style="height: 400px;"
+            collapsible="flase">
+        </div>
+        <div id="bb" data-options="region:'center',title:'架次飞机完成度统计'">
+            <table id="dg">
+            </table>
+        </div>
+    </div>
+    <div id="win" class="easyui-window" title="任务作业明细" style="width: 700px; height: 550px"
+        data-options="modal:true,minimizable:false,maximizable:false,collapsible:false,closed:true">
+        <div>
+            <table>
+                <tr>
+                    <td style="width: 250px">
+                        <td>
+                            <label id="newadd">
+                                新增</label>
+                        </td>
+                        <td>
+                            <div id="processPercentMainDiv" style="position: relative; border: 1px #CCC solid;
+                                height: 15px; width: 35px; margin: 0 auto; padding: 1px">
+                                <div id="processPercent" style="background: red; height: 15px; width: 35px">
+                                </div>
+                            </div>
+                        </td>
+                    </td>
+                    <td style="width: 50px">
+                        <td>
+                            <label id="execid">
+                                执行</label>
+                        </td>
+                        <td>
+                            <div id="Div1" style="position: relative; border: 1px #CCC solid; height: 15px; width: 35px;
+                                margin: 0 auto; padding: 1px">
+                                <div id="Div2" style="background: yellow; height: 15px; width: 35px">
+                                </div>
+                            </div>
+                        </td>
+                    </td>
+                    <td style="width: 50px">
+                        <td>
+                            <label id="finwork">
+                                完工</label>
+                        </td>
+                        <td>
+                            <div id="Div3" style="position: relative; border: 1px #CCC solid; height: 15px; width: 35px;
+                                margin: 0 auto; padding: 1px">
+                                <div id="Div4" style="background: #66FF00; height: 15px; width: 35px">
+                                </div>
+                            </div>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="easyui-layout" fit="true">
+            <div id="cc" data-options="region:'north',title:'任务列表',split:false" style="height: 300px;"
+                collapsible="false">
+                <table id="dg1">
+                </table>
+            </div>
+            <div id="dd" data-options="region:'center',title:'作业列表'">
+                <table id="dg2">
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="win_1" class="easyui-window" title="问题明细" style="width: 550px; height: 250px"
+        data-options="modal:true,minimizable:false,maximizable:false,collapsible:false,closed:true">
+     <div>
+             <table id="dg3">
+              </table>
+      </div>                
+    </div>
+</body>
+</html>

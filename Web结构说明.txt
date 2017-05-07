@@ -1,0 +1,71 @@
+/********************************
+梅小冬
+20141211
+说明：描述菜单查询页面和业务页面全局变量，和控件相关全局函数
+*********************************/
+业务窗体变量说明
+		document.isEditMode =window.dialogArguments.isEditMode ;   //是否能编辑 值: true false
+		document.itemTypeName =window.dialogArguments.itemname ;   //业务窗体对象类名称
+		document.formName =window.dialogArguments.formname ;       //窗体
+		document.action =window.dialogArguments.action ;           //动作 值：get,edit,add,delete
+		document.id =window.dialogArguments.id ;                   //单据id
+		document.json											   //当前单据数据的json结构
+		document.topWin                                            //当前业务界面上级的窗体window
+查询，业务窗体适用	
+函数：
+	如果窗体有datagrid或者tree可以获取其构造函数
+	命名规则为:(控件对应的id+"_system")	
+	eg：dg_system() dg1_system()
+变量：1. dgmsg_sys 网格对应表，该变量为对象，对象索引为网格id，
+	   每个【dgmsg_sys.网格id】存储一个数组（索引0：网格id；索引1：业务窗体名；索引2：业务窗体查询的对象类）
+	   eg：dgmsg_sys.dg = ['dg','DEV_Department','T_Department']; dgmsg_sys.dg1 = ['dg1','DEV_Department1','T_Department1'];
+      2. formname 查询页面调用的窗体（查询专用）
+
+
+/********************************
+罗汉文
+20141119
+
+*********************************/
+1，命名空间
+在 Com.JoinSoft.命名空间下
+
+2,View空间在是系统及公共页面空间
+
+3，BizPage下是各个业务模块所在空间
+BizPage下允许再次划分命名空间，只能划分一层。
+一个业务界面对应一个同名Javascript文件
+
+4，Scripts文件夹下
+   都是脚本文件所在位置
+   引用的外部脚本放在单独的文件夹中。
+   系统脚本放在SystemJS中
+   BizPage对应的脚本放在Scripts下，名称同BizPage页面名称
+
+5，CSS,Image存储在Data文件夹下，Image要按照使用位置再次归类
+
+6，BizPage下可以建立htm和webform以及aspx文件作为业务界面的容器
+
+7，所有的测试性质功能放在Test下
+8，业务单据 命名规则及方法
+   使用id进行命名
+   规则
+   所有字母小写
+   server_字段数据类型_对象类名称_对象类字段名称_tag信息(默认值"tagdefault")
+
+
+9,业务模块在BizPage文件夹下新建子文件夹(自己定义名称)
+在新建的文件夹下新建asp.net页面或者html页面
+10,c#中调用Aras方法返回结果
+举例：
+			ArasProxyServices ps = new ArasProxyServices();
+            return ps.GetMethodResult("GetMainMenuInfo", "", "TEXT");
+11，JavaScript调用举例：
+var result = log.ajax.getMethodResult("PubCallExecProc2", "<procname>M_ScheduleQuaryColumn</procname>","TEXT");
+12,关于PubCallExecProc2的返回值参看LyDbRunTest中的PubCallExecProc2方法
+或者参看LeanDB数据库中的GetMenusInfo方法
+13,除了ArasProxyServices.GetMethodResult(c#)方法和log.ajax.getMethodResult(javascript)方法，其他方法不运行调用
+14,建议在Aras服务器方法中全部返回值为json或者text
+15，新的js文件放在Script文件夹下，系统公用的放在Script/SystemJS下
+
+

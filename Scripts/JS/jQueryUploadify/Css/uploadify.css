@@ -1,0 +1,29 @@
+/*
+Uploadify v2.1.4
+*/
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+.uploadify-main{border:1px solid #BECFEB;width: 880px;margin:0px auto;}
+.uploadify-main .uploadify-info{padding:5px;text-align:left;width:870px;}
+.uploadify-main .uploadify-tip,.uploadify-main .uploadify-status{font-family:Î¢ÈíÑÅºÚ;font-size:14px;color:#0099FF;border-bottom:1px solid #BECFEB;}
+.uploadify-main .uploadify-info .info{font-size:16px;font-weight:bold;font-family:Î¢ÈíÑÅºÚ;color:#f00;}
+.uploadify-main .uploadify-info .info .pleseSelectFile,.uploadify-main .uploadify-status{display:none;}
+.uploadify-main .uploadify-info .info ul{color:#0099FF;list-style-type:none;display:none;margin-top:0px;}
+.uploadify-main .uploadify-info .info ul li{font-family:Î¢ÈíÑÅºÚ;font-size:14px;}
+.uploadify-main .uploadify-info .info ul .completedinfo{padding-left:50px;font-family:Î¢ÈíÑÅºÚ;font-size:12px;border-bottom:1px dashed #BECFEB;height:18px;line-height:18px;background:#fff url(''); display:inline;}
+.uploadify-main .uploadify-info .info ul .right{background:#fff url('Image/right.png') no-repeat 30px 1px;}
+.uploadify-main .uploadify-info .info ul .error{background:#fff url('Image/error.png') no-repeat 30px 1px;}
+.uploadify-main .uploadify-info .info ul .time{background:#fff url('Image/time.png') no-repeat 30px 1px;}
+.uploadify-main .uploadify-info .info ul .size{background:#fff url('Image/size.png') no-repeat 30px 1px;}
+.uploadify-main #showUploadFile{width: 880px; height: auto;}
+.uploadify-main .uploadify-clear{width:100%;height:1px;line-height:1px;clear:both;}
+.uploadify-main .uploadify-btn{padding:5px;width:870px;text-align:right; display:inline;}
+.uploadify-main a{text-decoration:none;}
+.uploadify-main .uploadify-img{width:80px;height:25px;border-width:0px;}
+.uploadifyQueueItem {background-color: #eff2f9;border: 1px solid #BECFEB;font: 11px Verdana, Geneva, sans-serif;margin: 5px 4px;padding: 5px;width: 125px;height: 60px;float:left;color:#0099FF;overflow:hidden;}
+.uploadifyError {background-color: #FDE5DD !important;border: 2px solid #FBCBBC !important;}
+.uploadifyQueueItem .cancel {float: right;}
+ .tool  {float: right;display:none;}
+ .tool1  {float: right;display:block;}
+.uploadifyQueue .completed {background-color: #dde7f9;}
+.uploadifyProgress {background-color: #dde7f9;margin-top: 10px;width: 100%;}
+.uploadifyProgressBar {background-color: #0099FF;height: 3px;width: 1px;}

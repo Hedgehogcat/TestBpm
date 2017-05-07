@@ -1,0 +1,9 @@
+{
+"key1":'<link href="/Data/css/default.css" rel="stylesheet" type="text/css" />',
+"key2":'<link href="/Scripts/jquery-easyui-1.4.1/themes/default/easyui.css" rel="stylesheet" type="text/css" />',
+"key3":'<link href="/Scripts/jquery-easyui-1.4.1/themes/icon.css" rel="stylesheet" type="text/css" />',
+"key4":'<script src="/Scripts/jquery-easyui-1.4.1/jquery.min.js" type="text/javascript"></script>',
+"key5":'<script src="/Scripts/jquery-easyui-1.4.1/jquery.easyui.min.js" type="text/javascript"></script>',
+"key6":'<script src="/Scripts/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>',
+"key7":'<script src="/Scripts/SystemJS/log.js" type="text/javascript"></script>'
+}
