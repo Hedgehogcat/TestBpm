@@ -112,7 +112,7 @@
                 </div>
                 <div class="fm-item">
                     <label for="logonId" class="form-label">
-                        密&nbsp;&nbsp;码：</label>
+                        密&nbsp;码：</label>
                     <input class="easyui-textbox" style="width: 60%; height: 30px; padding: 12px" data-options="prompt:'输入密码',iconCls:'icon-lock',iconWidth:38"
                         type="password" id="txtPassword" tabindex="2" />
                     <div class="ui-form-explain">
